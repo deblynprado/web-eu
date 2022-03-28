@@ -5,11 +5,11 @@
 </head>
 <body>
   <?php
-    $login = "/common/login.php";
+    $login = "common/login-form.php";
 
-    if (file_exists( $login ) ) :
-      require_once( $login );
-      require_once "calc.php";
+    if ( file_exists( $login ) ) :
+      require $login;
+      require "calc.php";
   else :
 
   endif;
